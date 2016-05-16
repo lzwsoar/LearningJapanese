@@ -1,0 +1,26 @@
+<html>
+  <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<script type="text/javascript">
+		var dic = [
+			'あ', 'い', 'う', 'え', 'お',
+			'か', 'き', 'く', 'け', 'こ',
+			'さ', 'し', 'す', 'せ', 'そ'
+		];
+				
+		var array = [];
+		for(var k = 0; k < 20; k++){
+			var j = '';
+			var len = Math.floor(Math.random() * 3) + 2;
+			for(var i = 0; i < len; i++){
+				var t = Math.floor(Math.random() * dic.length);
+				j += dic[t];
+			}
+			array.push(j);
+		}
+		document.write(array.join('</br>'));
+	</script>
+    <title></title>
+  </head>
+  <body style="font-size: 18pt; font-family: cursive; text-align: center; line-height: 28pt;"></body>
+</html>
